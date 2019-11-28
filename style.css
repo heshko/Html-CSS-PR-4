@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+}
+
+
+nav{
+    width: 1200px;
+    margin: 0px auto;
+}
+nav .nav-img{
+    float:left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+text-decoration: none;
+}
+nav div.nav-clear{
+    clear: both;
+}
+
+main{
+    width: 1200px;
+    margin: 10px auto; 
+    
+}
+main h1.main-MyName{
+
+  width: 120px;
+  margin: 0px auto; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-shadow: 0px 0px 10px gray;
+}
+
+header.main-header{
+    width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+   
+    background-size: 100% 100%;
+    animation-name: moving;
+    animation-play-state: running;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function:cubic-bezier(1,.99,1,1);
+    animation-fill-mode: backwards;
+    box-shadow: 0px 0px 20px 10px gray;
+    
+ }
+ 
+@keyframes moving{
+    0%{
+        background-image: url("https://wallpaperaccess.com/full/451260.jpg");
+     }
+     25%{
+        background-image: url("http://hdqwalls.com/wallpapers/fortnite-season-x-fr.jpg");
+    
+    }
+     50%{
+        background-image: url("https://ag-spots-2019.o.auroraobjects.eu/2019/08/04/other/2880-1800-crop-maserati-ghibli-diesel-granlusso-c747304082019152739_1.jpg");
+     }
+     75%{
+        background-image: url("https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/siberian-husky-card-small.jpg?bust=1535567860");
+      }
+      100%{
+        background-image: url("https://cdn.pixabay.com/photo/2014/08/01/00/08/pier-407252_960_720.jpg");
+      }
+}
+section.about{
+    width: 1200px;
+    height: 600px;
+    margin: 40px auto;
+    column-count: 2;
+  
+    
+
+}
+
+section h1.about-me-h1{
+    column-span: all;
+}
+
+section.about > div{
+    height: 80%;
+   
+}
+section div.about-me-img{
+
+   background-image: url("https://scontent-dus1-1.xx.fbcdn.net/v/t1.0-9/13178667_10154170658574168_4956982195436699724_n.jpg?_nc_cat=100&_nc_ohc=KYD1lc-SthUAQmWjVKwsb0mggbmwzc39EqFwSs9-GisArKfkwfJ8m73QA&_nc_ht=scontent-dus1-1.xx&oh=071231d8a05169458e3943c74269b5b2&oe=5E3F13EB");
+    background-size: 100% 100%;
+}
+section div.about-me-text{
+    padding: 30px 0px;
+  text-align: center;
+   
+ }
+
+section.section-moveis
+{
+    
+    width: 1200px;
+    height: 800px;
+    margin: 60px auto;
+   
+    perspective: 800px;
+    perspective-origin: center center;
+   
+}
+section.section-moveis h1.movies-text
+{
+   text-align: center;
+}
+section.section-moveis div.movies-countainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+   
+
+}
+section.section-moveis div.movies-countainer > div{
+    width: 30%;
+    height: 300px;
+   
+    
+}
+.movie-1{
+     transform-style: preserve-3d;
+      position: relative;
+      transition: all 2s ease-in-out;
+}
+
+.movie-1> div
+{
+width: 100%;
+height: 100%;
+}
+.movie-1 div.movie-1-front{
+
+    background-image:url("https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg");
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+    position :absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    
+}
+
+.movie-1 div.movie-1-back{
+    text-align: center;
+   background-image:url("https://thebottomline.as.ucsb.edu/wp-content/uploads/2013/10/breakingbad01_web-696x389.jpg") ;
+   background-size: 100% 100%; 
+   transform: rotatey(180deg);
+    position :absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.movie-1:hover {
+    
+  
+   
+    transform: rotatey(180deg);
+}
+
+.movie-2{
+    transform-style: preserve-3d;
+     position: relative;
+     transition: all 2s ease-in-out;
+}
+
+.movie-2> div
+{
+width: 100%;
+height: 100%;
+}
+.movie-2 div.movie-2-front{
+
+   background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/3/37/True_Detective_season_1.png/250px-True_Detective_season_1.png");
+   background-size: 100% 100%;
+   backface-visibility: hidden;
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   
+   
+}
+
+.movie-2 div.movie-2-back{
+   text-align: center;
+  background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2013/10/true_detective_matthew_mcconaughey.jpg");
+  background-size: 100% 100%;
+  transform: rotatey(180deg);
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+
+.movie-2:hover {
+   
+   
+  
+   transform: rotatey(180deg);
+}
+
+.movie-3{
+    transform-style: preserve-3d;
+     position: relative;
+     transition: all 2s ease-in-out;
+}
+
+.movie-3> div
+{
+width: 100%;
+height: 100%;
+}
+.movie-3 div.movie-3-front{
+
+   background-image:url("https://tvseriesfinale.com/wp-content/uploads/2016/02/missing10.jpg");
+   background-size: 100% 100%;
+   backface-visibility: hidden;
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   
+   
+}
+
+.movie-3 div.movie-3-back{
+   text-align: center;
+  background-image: url("https://images.immediate.co.uk/production/volatile/sites/3/2019/02/17445620-high_res-baptiste-c5669df.jpg?quality=45&resize=620,413");
+  background-size: 100% 100%;
+   transform: rotatey(180deg);
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+
+.movie-3:hover {
+
+   transform: rotatey(180deg);
+}
+
+.movie-4{
+    transform-style: preserve-3d;
+     position: relative;
+     transition: all 2s ease-in-out;
+}
+
+.movie-4> div
+{
+width: 100%;
+height: 100%;
+}
+.movie-4 div.movie-4-front{
+
+   background-image:url("https://assets.foxdcg.com/DCG-Digital-Production/FOX/KeyArt_Originals/PrisonBreak/Season_05/seriesDetail.jpg?fit=inside%7C1920:1080");
+   background-size: 100% 100%;
+   backface-visibility: hidden;
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   
+   
+}
+
+.movie-4 div.movie-4-back{
+   text-align: center;
+   background-image:url("https://pbs.twimg.com/profile_images/870094609728372736/UMK2jXaT_400x400.jpg");
+   background-size: 100% 100%;
+   transform: rotatey(180deg);
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+
+.movie-4:hover {
+
+   transform: rotatey(180deg);
+}
+.movie-5{
+    transform-style: preserve-3d;
+     position: relative;
+     transition: all 2s ease-in-out;
+}
+
+.movie-5> div
+{
+width: 100%;
+height: 100%;
+}
+.movie-5 div.movie-5-front{
+
+   background-image:url("https://img.akoam.net/files/1519075771.jpg");
+   background-size: 100% 100%;
+   backface-visibility: hidden;
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   
+   
+}
+
+.movie-5 div.movie-5-back{
+   text-align: center;
+ background-image: url("https://cdn.ome.lt/legacy/images/galerias/Um-Sonho-de-Liberdade/Um-Sonho-de-Liberdade-01.jpg");
+ background-size: 100% 100%;
+ transform: rotatey(180deg);
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+
+.movie-5:hover {
+
+   transform: rotatey(180deg);
+}
+.movie-6{
+    transform-style: preserve-3d;
+     position: relative;
+     transition: all 2s ease-in-out;
+}
+
+.movie-6> div
+{
+width: 100%;
+height: 100%;
+}
+.movie-6 div.movie-6-front{
+
+   background-image:url("https://a.ltrbxd.com/resized/sm/upload/hp/je/jx/vf/i-am-legend-1200-1200-675-675-crop-000000.jpg?k=584faf5c18");
+   background-size: 100% 100%;
+   backface-visibility: hidden;
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   
+   
+}
+
+.movie-6 div.movie-6-back{
+   text-align: center;
+   background-image: url("https://images.ctfassets.net/7h71s48744nc/1T0LH5GReI4ck6ooIWOy8o/2ed9b5e0b7686e755aff24e49fa70efb/i-am-legend.jpg");
+   background-size: 100% 100%;
+   
+   transform: rotatey(180deg);
+   position :absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+
+
+.movie-6:hover {
+
+   transform: rotatey(180deg);
+}
+div.movies-countainer p{
+    color:white;
+    
+    font-style: italic;
+    font-weight: 900;
+    font-size: x-large;
+
+}
+
+section.Contact{
+    width: 1200px;
+    margin: 0px auto;
+ 
+    text-align: center;
+}
+section.Contact form > input,textarea{
+   display: block;
+   margin: 5px auto 35px;
+   width: 300px;
+   border: none;
+   border-bottom: 2px solid black;
+}
+select{
+    width: 200px;
+}
+
+textarea{
+    border: 2px solid black;
+}
+
+footer{
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #262626;
+    color: #fff;
+    column-count:2;
+    column-gap: 1px solid white;
+    column-gap: 1px solid white;
+    border-radius: 2%;
+   
+}
+.footer-colum-1,.footer-colum-2{
+    text-align: center;
+}
+
+.footer-colum-1-h1{
+  
+    font-style: italic;
+    margin-top: 1px;
+}
+footer ul{
+    padding: 0px;
+    list-style: none;
+    
+    
+}
+footer img{
+width: 20px;
+height: 20px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-left:5px ;
+}
